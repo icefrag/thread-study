@@ -14,6 +14,14 @@ volatile
 1.保证线程之间数据的可见性
 2.用于停止线程,用作全局开关
 
+volatile和synch的区别
+1.volatile只能修饰变量,synch修饰方法和代码块
+2.多线程访问volatile不会发生阻塞,synch会阻塞
+3.volatile保证数据可见性,不保证原子性.
+
+synch有互斥性和可见性.
+
+
 sleep 线程进入睡眠,但是不会释放已经获得的锁.
 yield 放弃当前的cpu资源.
 
